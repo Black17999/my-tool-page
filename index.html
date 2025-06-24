@@ -2,12 +2,21 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <title>小工具演示页</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UUID 生成器</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>✨ 我的小工具</h1>
-  <p>这是一个静态演示页面，可以用来展示你的小工具功能、优势或用法。</p>
-  <button onclick="alert('你好，世界！')">点我试试</button>
+  <div class="container">
+    <h1>🔑 UUID V4 生成器</h1>
+    <p>点击按钮即可生成一个全新的 UUID（版本 4），符合标准格式。</p>
+    <div class="uuid-display" id="uuid">点击“生成 UUID”开始</div>
+    <div class="buttons">
+      <button id="genBtn">生成 UUID</button>
+      <button id="copyBtn">复制 UUID</button>
+    </div>
+    <small>使用浏览器 Crypto API：<code>crypto.randomUUID()</code></small>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
